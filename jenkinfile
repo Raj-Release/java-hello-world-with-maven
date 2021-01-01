@@ -45,7 +45,9 @@ pipeline
 					}
 				}
 			}
+			echo 'Read Json file completed'
         }
+	
         stage('Checkout APP files')
     	{
 			steps
