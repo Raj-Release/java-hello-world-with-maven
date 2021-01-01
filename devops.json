@@ -2,6 +2,6 @@
  "SIT":
       {
        "galaxy_cls_git_url": "https://github.com/Raj-Release/Source_file.git",
-      	"galaxy_cls_git_branch": "master",
+      	"galaxy_cls_git_branch": "main",
       }
 }
