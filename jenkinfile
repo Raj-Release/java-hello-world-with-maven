@@ -34,6 +34,7 @@ stages
 	   }
 	   
 	  }
+	  }
 	     	stage("Build and Package")
 		{
 			steps
