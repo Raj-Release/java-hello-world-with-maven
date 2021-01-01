@@ -42,10 +42,11 @@ pipeline
 						def props = readJSON file: "${env.workspace}/config/devops.json"
 						app_git_url=props["${params.Environment}"]['galaxy_cls_git_url']
 						app_git_branch = props["${params.Environment}"]['galaxy_cls_git_branch']
+						echo 'Read Json file completed'
 					}
 				}
 			}
-			echo 'Read Json file completed'
+			
         }
 	
         stage('Checkout APP files')
