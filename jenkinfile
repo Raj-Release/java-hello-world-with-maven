@@ -16,15 +16,11 @@ stages
 	    {
 	     steps
 	         {
-    	   dir('config')
-		    {
 			 git branch:'master',credentialsId: '9e72922c-502a-4257-b092-8184f7ef5d1c', url: 'https://github.com/Raj-Release/java-hello-world-with-maven.git'
 			 echo 'checkout completed' 
 			}		 
 	   }
-	   
-	  }
-}
+	   }
  	stage("Build and Package")
 		{
 			steps
