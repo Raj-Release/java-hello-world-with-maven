@@ -39,7 +39,7 @@ pipeline
 					echo 'checkout completed'                
 					script
 					{  
-						def props = readJSON file: "${env.workspace}/config/devops.json"
+						def props = readJSON file: "${env.WORKSPACE}/config/devops.json"
 						app_git_url=props["${params.Environment}"]['galaxy_cls_git_url']
 						app_git_branch = props["${params.Environment}"]['galaxy_cls_git_branch']
 						echo 'Read Json file completed'
